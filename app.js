@@ -19,6 +19,7 @@
 var express = require('express'); // app server
 var bodyParser = require('body-parser'); // parser for post requests
 var AssistantV1 = require('watson-developer-cloud/assistant/v1'); // watson sdk
+var requestService = require('./requests');
 
 var app = express();
 
@@ -68,6 +69,9 @@ function updateMessage(input, response) {
   var responseText = null;
   if (!response.output) {
     response.output = {};
+  } else if (response.output.action) {
+    requestService.identifyIntent(response.output.action)
+    return response;
   } else {
     return response;
   }
