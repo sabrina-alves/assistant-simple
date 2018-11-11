@@ -4,10 +4,49 @@
   box-sizing: border-box;
 }
 
-body {
+/* ody {
   font-family: Helvetica Neue for IBM, Helvetica Neue, Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
+}
+*/
+
+body {
+  background: #C5DDEB;
+  font: 14px/20px "Lato", Arial, sans-serif;
+  margin: 20px;
+}
+
+.chat {
+  width: 400px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+}
+
+.chat-header {
+  background: rgb(3, 42, 81);
+  padding: 20px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+  
+  .text-header {
+    color: rgb(254, 254, 254);
+  }
+
+.header-two {
+  background: rgb(216, 59, 59);
+  padding: 6px;
+  margin-bottom: 1px;
+  height: 1px;
+  width: 400px;
+}
+
+img {
+  width: 36px;
+  border-radius: 50%;
 }
 
 div {
@@ -15,9 +54,11 @@ div {
   line-height: 1.25rem;
 }
 
-.disclaimer {
-  font-size: 0.75rem;
-  padding: 0.5rem;
+.sendbutton {
+  font-size: 20px;
+  color: #000000;
+  border-radius: 5px;
+  background-color: #ffffff;
 }
 
 #view-change-button {
@@ -186,20 +227,21 @@ div {
 
 .from-watson p {
   margin: 0.3125rem;
-  padding: 0 1.25rem;
+  padding: 0 3.50rem;
 }
 
 .from-watson.latest.top p:before {
   content: ".";
-  color: #9855D4;
-  background-image: url("../img/marker_image.png");
-  background-size: 0.3125rem 1.3125rem;
+  color: rgb(3, 42, 81);
+  background-image: url("../img/IconAssistent.jpeg");
+  border-radius: 100%; 
+  background-size: 2.7125rem 2.7125rem;
   position: absolute;
   z-index: 2;
-  left: 0.4375rem;
-  width: 0.3125rem;
-  height: 1.3125rem;
-  line-height: 1.3125rem;
+  left: 0.7375rem;
+  width: 2.7125rem;
+  height: 2.7125rem;
+  line-height: 1.7125rem;
 }
 
 #textInput {
@@ -219,7 +261,7 @@ div {
 }
 
 #textInput.underline {
-  border-bottom: 2px solid #00B4A0;
+  border-bottom: 2px solid rgb(216, 59, 59);
 }
 
 ::-webkit-input-placeholder {
@@ -260,6 +302,7 @@ input:-moz-placeholder {
 }
 
 #payload-column {
+  display: none;
   font-family: Monaco, monospace;
   font-size: 0.75rem;
   letter-spacing: 0;
