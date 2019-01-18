@@ -7,7 +7,7 @@
 body {
   background: #C5DDEB;
   font: 14px/20px "Lato", Arial, sans-serif;
-  margin: 20px;
+  /* margin: 40px; */
 }
 
 .chat {
@@ -16,6 +16,7 @@ body {
   background: #fff;
   border-radius: 5px;
   box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+  height: 100%;
 }
 
 .chat-header {
@@ -100,7 +101,7 @@ div {
 }
 
 .chat-column {
-  height: 90%;
+  height: 100%;
   padding: 0.9375rem 0 0.625rem 0;
   margin: auto;
   text-align: left;
@@ -120,7 +121,7 @@ div {
   margin: 0.75rem;
   overflow-y: auto;
   overflow-x: hidden;
-  height: calc(100% - 4rem);
+  height: 70%;
 }
 
 .message-inner {
