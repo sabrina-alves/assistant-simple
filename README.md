@@ -13,6 +13,8 @@
 </p>
 </p>
 
+![Demo](readme_images/demo.gif)
+
 
 Current: 
 ![Demo1](readme_images/Assistant.gif)
