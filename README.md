@@ -2,10 +2,13 @@
 
 </p>
 </p>
+
 ## Old front end
+
 ![Demo](readme_images/demo.gif)
 
 ## Current layout (after changes) 
+
 ![Demo1](readme_images/Assistant.gif)
 
 Fork from [Watson Developer Cloud](watson-developer-cloud/assistant-simple).
